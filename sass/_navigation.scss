@@ -1,0 +1,14 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			padding: 10px;
+			color: white;
+			text-transform: uppercase;
+		}
+	}
+}

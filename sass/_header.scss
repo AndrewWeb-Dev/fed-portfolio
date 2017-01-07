@@ -1,0 +1,240 @@
+.fixedHead {
+	background-image: url('./images/itsme.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	width: 100%;
+	height: 115vh;
+	position: relative;
+	@media all and (max-width: 940px) {
+	    background-attachment: initial;
+	}
+	@media all and (max-width: 360px) {
+		height: 120vh;
+	}
+	.headerContainer {
+		#menu-social-menu {
+			position: relative;
+			i {
+				font-size: 19px;
+				padding: 40px 0;
+				&:hover {
+					color: $mainOrange;
+					transition: all 0.15s;
+				}
+			}
+		}
+		.headerContent {
+			width: 90%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			animation-delay: 1s;
+			h1 {
+				font-family: $brandFont;
+				text-align: center;
+				font-weight: normal;
+				padding: 100px 0;
+				margin: 0;
+				@media all and (max-width: 760px) {
+					padding: 70px 0;
+				}
+				@media all and (max-width: 361px) {
+					padding: 0px 0 50px 0;
+				}
+				a {
+					color: #FFF;
+					font-size: 48px;
+					.devMan {
+						display: block;
+						margin-top: 10px;
+						padding-top: 10px;
+						border-top: 3px solid $mainOrange;
+						@media all and (max-width: 940px) {
+							display: inline-block;
+						}
+					}
+					@media all and (max-width: 760px) {
+					 font-size: 40px;
+					}	
+					@media all and (max-width: 360px) {
+						font-size: 30px;
+					}
+				}
+			}
+			.hireButton {
+				font-family: $baseFont;
+				font-weight: 700;
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #FFF;
+				background-color: $mainOrange;
+				padding: 12px 40px;
+				border-radius: 2px;
+				margin-bottom: 10px;
+				z-index: 10000;
+				&:hover {
+					background-color: $mainBlue;
+					transition: all 0.15s;
+				}
+			}
+			.iconBox {
+				position: relative;
+				top: 30px;
+			}
+			.iconContainer {
+				position: relative;
+				top: 90px;
+				border: 3px solid white;
+				border-radius: 50%;
+				padding: 15px 17px;
+				margin-top: 50px;
+				&:hover {
+					border-color: $mainOrange;
+					transition: all 0.15s;
+				}
+				&:hover i {
+					color: $mainOrange;
+					transition: all 0.15s;
+				}
+			}
+			i {
+				position: relative;
+				font-size: 30px;
+				top: 5px;
+				color: #FFF;
+			}
+		}
+	}
+	.fa-bars, .fa-times-circle{
+		display: none;
+		animation-delay: 1s;
+		@media all and (max-width: 760px) {
+			display: block;	
+			padding: 15px;
+			font-size: 40px;
+			color: $mainOrange;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 100000;
+			&:hover, &:active, &:focus {
+				color: $mainBlue;
+			}
+		}
+	}
+	.fa-times-circle {
+		display: none;
+		color: $mainBlue;
+		@media all and (max-width: 760px) {
+			display: none;
+		}
+	}
+}
+.fixedNav {
+	display: none;
+	.navBox {
+		margin-top: 10px;
+		.menu {
+			margin: 0;
+		}
+	}
+}
+.nav , .fixedNav{
+	background-color: $mainBlue;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	z-index: 150;
+	@media all and (max-width: 760px) {
+		top: 0;
+		background: rgba(243, 156, 18, 0.9);
+		position: fixed;
+		box-shadow: none;
+		height: 100vh;
+		z-index: 1000;
+		display: none;
+	}
+
+	.navFlexer {
+		display: flex;
+		justify-content: space-between;
+		padding: 15px 10px;
+		@media all and (max-width: 760px) {
+			margin-top: 140px;
+			display: block;
+		}
+		@media all and (max-width: 360px) {
+			margin-top: 90px;
+		}
+
+		a {
+			font-size: 15px;
+			font-weight: 700;
+			padding: 0;
+			@media all and (max-width: 760px) {
+				font-size: 30px;
+				letter-spacing: 2px;
+				line-height: 3;
+			}
+			&:hover {
+				color: $mainOrange;
+				transition: all 0.3s;
+				@media all and (max-width: 760px) {
+					color: $mainBlue;
+				}
+			}
+		}
+		li {
+			vertical-align: center;
+			padding: 0 30px;
+			@media all and (max-width: 760px) {
+				display: block;
+			}
+		}
+		.initials {
+			font-family: 'Viafont', sans-serif;
+			color: #FFF;
+			font-size: 30px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+.fixedNav {
+	@media all and (max-width: 760px) {
+		display: none;
+	}	
+}
+.nav-scrolled {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	@media all and (max-width: 760px) {
+		display: none;
+	}
+}
+
+
+
+ul.menu {
+	margin: 16px;
+	@media all and (max-width: 760px) {
+		display: block;
+		margin: 0;
+	}
+}
+
+.globalNav .menu {
+	margin: 0;
+}
+
+.globalNav {
+	top: 0;
+}
+
+.globalNav .navBox {
+	margin-top: 10px;
+}

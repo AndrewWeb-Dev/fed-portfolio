@@ -1,0 +1,24 @@
+.sidebar {
+	width: 30%;
+	float: left;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+		}
+	}
+	.widget-title {
+		color: $mainBlue;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	a {
+		color: $mainOrange;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
