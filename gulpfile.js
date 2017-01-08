@@ -11,12 +11,12 @@ var gulp   = require('gulp'),
 		sourcemaps = require('gulp-sourcemaps'),
 		uglify = require('gulp-uglify');
 
-gulp.task('bs', function() {
-	browserSync.init({
-		// if running on windows, change this to http://localhost
-		proxy: 'http://localhost:8888'
-	});
-});
+// gulp.task('bs', function() {
+// 	browserSync.init({
+// 		// if running on windows, change this to http://localhost
+// 		proxy: 'http://localhost'
+// 	});
+// });
 
 gulp.task('styles', function() {
 	return gulp.src('./sass/**/*.scss')

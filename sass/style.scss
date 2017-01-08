@@ -8,12 +8,13 @@
 */
 
 
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
 
 @font-face {
   font-family: Viafont;
   src: url(./fonts/Viafont.ttf);
 }
+
+
 
 $brandFont: 'Viafont', sans-serif;
 $baseFont: 'Open Sans', sans-serif;
@@ -23,6 +24,8 @@ $mainBlue: #2c3e50;
 $altBlue: #344e67;
 $mainGrey: #a8a8a8;
 
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -322,6 +325,7 @@ a:focus {
 		@media all and (max-width: 940px) {
 			width: 80%;
 			padding: 0 50px;
+
 		}
 		@media all and (max-width: 760px) {
 			width: 100%;
@@ -403,6 +407,7 @@ a:focus {
 
 .blogContent {
 	.posts {
+
 		width: 90%;
 		height: 400px;
 		color: #FFF;
@@ -729,4 +734,3 @@ input[type="submit"]:hover {
 		padding: 20px 0;
 	}
 }
-

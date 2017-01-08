@@ -16,44 +16,29 @@
 
 <header>
   <div class="fixedHead">
-    <div class="container headerContainer">
-      <div class="headerContent animated fadeInDown">  
-        <?php wp_nav_menu( array(
-            'container' => true,
-            'theme_location' => 'social'
-          )); ?>
-        <h1>
-          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-          Andrew Thompson<span class="devMan">Front End Developer</span>
-          </a>
-        </h1>
-        <a class="hireButton" href="#Contact">Hire Me Now</a><br>
-        <div class="iconBox animated bounce infinite">
-          <a class="iconContainer" href="#Hello"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div><!-- /.container -->
-      <i class="fa fa-bars animated fadeInRight" aria-hidden="true"></i>
-      <i class="fa fa-times-circle" aria-hidden="true"></i>
-      <div class="nav">
-        <div class="container">
-          <div class="navFlexer">
-            <?php wp_nav_menu( array(
+    <div class="overlay">
+      <div class="container headerContainer">
+        <div class="headerContent animated fadeInDown">  
+          <?php wp_nav_menu( array(
               'container' => true,
-              'theme_location' => 'primary'
+              'theme_location' => 'social'
             )); ?>
-            <?php wp_nav_menu( array(
-              'container' => true,
-              'theme_location' => 'secondary'
-            )); ?>
+          <h1>
+            <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+            Andrew Thompson<span class="devMan">Front End Developer</span>
+            </a>
+          </h1>
+          <a class="hireButton" href="#!">Read My Latest Post</a><br>
+          <div class="iconBox animated bounce infinite">
+            <a class="iconContainer" href="#Hello"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
           </div>
+        </div>
       </div><!-- /.container -->
-    </div> <!-- /.nav -->
-    <div class="fixedNav">
-        <div class="container">
-          <div class="navFlexer">
-            <p class="initials">AT<span class='orangeDot'>.</span></p>
-            <div class="navBox">
+        <i class="fa fa-bars animated fadeInRight" aria-hidden="true"></i>
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
+        <div class="nav">
+          <div class="container">
+            <div class="navFlexer">
               <?php wp_nav_menu( array(
                 'container' => true,
                 'theme_location' => 'primary'
@@ -63,9 +48,26 @@
                 'theme_location' => 'secondary'
               )); ?>
             </div>
-          </div>
-      </div><!-- /.container -->
-    </div>
+        </div><!-- /.container -->
+      </div> <!-- /.nav -->
+      <div class="fixedNav">
+          <div class="container">
+            <div class="navFlexer">
+              <p class="initials">AT<span class='orangeDot'>.</span></p>
+              <div class="navBox">
+                <?php wp_nav_menu( array(
+                  'container' => true,
+                  'theme_location' => 'primary'
+                )); ?>
+                <?php wp_nav_menu( array(
+                  'container' => true,
+                  'theme_location' => 'secondary'
+                )); ?>
+              </div>
+            </div>
+        </div><!-- /.container -->
+      </div>
+    </div><!--/.Overlay-->
   </div><!--/.fixedHead-->
 </header><!--/.header-->
 

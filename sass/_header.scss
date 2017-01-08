@@ -1,18 +1,27 @@
+.overlay {
+	background:linear-gradient(rgba(47,47,47,.7),rgba(47,47,47,.3));
+	width: inherit;
+	height: inherit;
+}
 .fixedHead {
-	background-image: url('./images/itsme.jpg');
+	background-image: url('./images/IMG_3306.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 	text-align: center;
 	width: 100%;
 	height: 115vh;
 	position: relative;
+	
 	@media all and (max-width: 940px) {
 	    background-attachment: initial;
+	    background-position: 30%;
 	}
 	@media all and (max-width: 360px) {
 		height: 120vh;
 	}
 	.headerContainer {
+		height: inherit;
 		#menu-social-menu {
 			position: relative;
 			i {
@@ -26,22 +35,14 @@
 		}
 		.headerContent {
 			width: 90%;
-			left: 0;
-			right: 0;
 			margin: auto;
+			height: 90%;
 			animation-delay: 1s;
 			h1 {
 				font-family: $brandFont;
 				text-align: center;
 				font-weight: normal;
-				padding: 100px 0;
 				margin: 0;
-				@media all and (max-width: 760px) {
-					padding: 70px 0;
-				}
-				@media all and (max-width: 361px) {
-					padding: 0px 0 50px 0;
-				}
 				a {
 					color: #FFF;
 					font-size: 48px;
@@ -49,7 +50,7 @@
 						display: block;
 						margin-top: 10px;
 						padding-top: 10px;
-						border-top: 3px solid $mainOrange;
+						color: $mainOrange;
 						@media all and (max-width: 940px) {
 							display: inline-block;
 						}
@@ -73,18 +74,17 @@
 				border-radius: 2px;
 				margin-bottom: 10px;
 				z-index: 10000;
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+				transition: all 0.15s;
 				&:hover {
 					background-color: $mainBlue;
 					transition: all 0.15s;
+					box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
 				}
 			}
 			.iconBox {
-				position: relative;
-				top: 30px;
 			}
 			.iconContainer {
-				position: relative;
-				top: 90px;
 				border: 3px solid white;
 				border-radius: 50%;
 				padding: 15px 17px;

@@ -3,7 +3,7 @@
 <div class="main homeMain">
   <div class="container">
     <div class="full">
-      <img class="headshot" id="Hello" src="wp-content/themes/wordpress_starter_theme/images/photo200.jpg">
+      <img class="headshot" id="Hello" src="wp-content/themes/fed-portfolio/images/photo200.jpg">
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <div class="wzContent">
@@ -125,7 +125,7 @@
           <?php the_field('form'); ?>
           <div class="contactInfo">
             <h4>Get In Touch</h4>
-            <p>Thank you for viewing my site. I am currently available for full time opportunities within the GTA! If you are interested in working together to build something amazing, please contact me.</p>
+            <p>Thank you for viewing my site. I am currently available for freelance opportunities! If you are interested in working together to build something amazing, please contact me.</p>
             <a href="mailto:hello@andrew-thompson.co">hello[at]andrew-thompson.co</a>
             <p>(647)291-5720</p>
           </div>
