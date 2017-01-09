@@ -15,8 +15,10 @@
 
 <header>
   <div class="blogTop">
-    <a href="http://www.andrew-thompson.co/#Blog"><i class="fa fa-caret-left" aria-hidden="true"></i> Return to Home Page</a>
-    <p class="initials">AT<span class="orangeDot">.</span></p>
+    <div class="container blogHeadContain">
+      <p class="initials">AT<span class="orangeDot">.</span></p>
+      <a href="http://www.andrew-thompson.co/#Blog"><i class="fa fa-caret-left" aria-hidden="true"></i> Return to Home Page</a>
+    </div>
   </div>
 </header><!--/.header-->
 
