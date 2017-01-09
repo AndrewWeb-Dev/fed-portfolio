@@ -34,9 +34,12 @@
 			}
 		}
 		.headerContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 			width: 90%;
 			margin: auto;
-			height: 90%;
+			height: 80%;
 			animation-delay: 1s;
 			h1 {
 				font-family: $brandFont;
@@ -64,6 +67,8 @@
 				}
 			}
 			.hireButton {
+				width: 250px;
+				margin: 0 auto;
 				font-family: $baseFont;
 				font-weight: 700;
 				font-size: 14px;
